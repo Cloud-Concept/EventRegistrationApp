@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/event_registration_blue_color"
+            android:id="@+id/relativeLayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event Details"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView3"
+            android:src="@mipmap/event"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvSubject"
+            android:text="fjeiwofj"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_height="match_parent" android:layout_below="@+id/tvSubject">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Is All Day Event"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvIsAllDayEvent"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvIsAllDayEventValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Owner Name"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvOwnerName"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvOwnerNameValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Duration in Minutes"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvDurationInMinutes"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvDurationInMinutesValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Who"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvWhoName"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvWhoNameValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="What"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvWhat"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvWhatValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Start Date Time"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvStartDateTime"
+                android:layout_below="@+id/tvSubject"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvStartDateTimeValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tvIsAllDayEventValue"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Activity Date Time"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvActivityDateTime"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvSubject"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvActivityDateTimeValue"
+                android:layout_below="@+id/tvIsAllDayEvent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

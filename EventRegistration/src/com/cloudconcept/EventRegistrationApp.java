@@ -30,6 +30,8 @@ import android.app.Application;
 
 import com.salesforce.androidsdk.smartsync.app.SmartSyncSDKManager;
 
+import activity.HomeActivity;
+
 /**
  * Application class for our application.
  */
@@ -38,7 +40,7 @@ public class EventRegistrationApp extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		SmartSyncSDKManager.initNative(getApplicationContext(), new KeyImpl(), MainActivity.class);
+		SmartSyncSDKManager.initNative(getApplicationContext(), new KeyImpl(), HomeActivity.class);
 
 		/*
 		 * Un-comment the line below to enable push notifications in this app.
