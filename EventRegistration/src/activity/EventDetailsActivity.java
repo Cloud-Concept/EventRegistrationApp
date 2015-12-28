@@ -18,7 +18,7 @@ public class EventDetailsActivity extends Activity {
     Event event;
     Gson gson;
 
-    TextView tvSubject,tvIsAllDayEvent,tvOwnerName,tvDurationInMinutes,tvWho,tvWhat,tvStartDateTime,tvActivityDateTime;
+    TextView tvSubject, tvIsAllDayEvent, tvOwnerName, tvDurationInMinutes, tvWho, tvWhat, tvStartDateTime, tvActivityDateTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,21 +28,21 @@ public class EventDetailsActivity extends Activity {
 
         gson = new Gson();
 
-        event = gson.fromJson(getIntent().getExtras().getString("obj"),Event.class);
-        tvSubject = (TextView)findViewById(R.id.tvSubject);
-        tvIsAllDayEvent = (TextView)findViewById(R.id.tvIsAllDayEventValue);
-        tvOwnerName = (TextView)findViewById(R.id.tvOwnerNameValue);
-        tvDurationInMinutes = (TextView)findViewById(R.id.tvDurationInMinutesValue);
-        tvWho = (TextView)findViewById(R.id.tvWhoNameValue);
-        tvWhat = (TextView)findViewById(R.id.tvWhatValue);
-        tvStartDateTime = (TextView)findViewById(R.id.tvStartDateTimeValue);
-        tvActivityDateTime = (TextView)findViewById(R.id.tvActivityDateTimeValue);
+        event = gson.fromJson(getIntent().getExtras().getString("obj"), Event.class);
+        tvSubject = (TextView) findViewById(R.id.tvSubject);
+        tvIsAllDayEvent = (TextView) findViewById(R.id.tvIsAllDayEventValue);
+        tvOwnerName = (TextView) findViewById(R.id.tvOwnerNameValue);
+        tvDurationInMinutes = (TextView) findViewById(R.id.tvDurationInMinutesValue);
+        tvWho = (TextView) findViewById(R.id.tvWhoNameValue);
+        tvWhat = (TextView) findViewById(R.id.tvWhatValue);
+        tvStartDateTime = (TextView) findViewById(R.id.tvStartDateTimeValue);
+        tvActivityDateTime = (TextView) findViewById(R.id.tvActivityDateTimeValue);
 
         tvSubject.setText(event.getSubject());
 
-        if(event.getIsAllDayEvent()==true){
+        if (event.getIsAllDayEvent() == true) {
             tvIsAllDayEvent.setText("Yes");
-        }else{
+        } else {
             tvIsAllDayEvent.setText("No");
         }
 
