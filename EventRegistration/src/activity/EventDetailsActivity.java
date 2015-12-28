@@ -8,9 +8,10 @@ import com.cloudconcept.R;
 import com.google.gson.Gson;
 
 import model.Event;
+import utilities.ExceptionHandler;
 
 /**
- * Created by Bibo on 12/27/15.
+ * Created by Abanoub Wagdy on 12/27/15.
  */
 public class EventDetailsActivity extends Activity {
 
@@ -22,6 +23,7 @@ public class EventDetailsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
         setContentView(R.layout.event_details);
 
         gson = new Gson();

@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import adapter.EventsAdapter;
 import model.Event;
 import utilities.ActivitiesLauncher;
+import utilities.ExceptionHandler;
 import utilities.Utilities;
 
 /**
@@ -49,6 +50,7 @@ public class HomeActivity extends SalesforceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
         setContentView(R.layout.home);
         lstEvents = (ListView) findViewById(R.id.lstEvents);
         etSearch = (EditText) findViewById(R.id.etSearch);
